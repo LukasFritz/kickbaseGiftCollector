@@ -32,7 +32,7 @@ Example for collector bot on a raspberry pi (OS: burster or higher)
  2. run cmd
  3. open crontab
     > sudo crontab -e
- 4. add new line with exit saving changes
+ 4. add new line and exit with saving changes
     > * 0 * * * python3 /home/pi/Desktop/main.py somebody@example.com kickbasepassword --ID kickbaseLeagueID --Ttoken telegramBotToken --Tuser telegramUserid
  5. wait until cronjob trigger and enjoy.
 
