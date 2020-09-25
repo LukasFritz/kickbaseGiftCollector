@@ -25,8 +25,6 @@ logger = logging.getLogger("kickbaseCollector")
 logger.setLevel(logging.DEBUG)
 logging.basicConfig(format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-
-
 parser = argparse.ArgumentParser(description='Python Script for automated collecting gifts at kickbase.com')
 
 # Positional Arguments
@@ -78,8 +76,6 @@ def main():
         else:
             logger.warning("No Gift collected!")
             sendTelepotMessage("League["+ args.ID +"]: No Gift collected!")
-
-
 
 
 if __name__ == '__main__':
