@@ -31,7 +31,7 @@ Example for collector bot on a raspberry pi (OS: burster or higher)
  1. place main.py on e.g. desktop 
  2. run cmd
  3. open crontab
-> sudo crontab -e
+    > sudo crontab -e
  4. add new line
 
     > * 0 * * * python3 /home/pi/Desktop/main.py somebody@example.com kickbasepassword --ID kickbaseLeagueID --Ttoken telegramBotToken --Tuser telegramUserid
