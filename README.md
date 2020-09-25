@@ -2,7 +2,10 @@
 With kickbaseGiftCollector you can automate the daily giftcollection by a simple cronjob. It's possibile to log the collection answer with a telegram bot message.
 ## Requirements
 [Python 3.7.5](https://github.com/python), [kickbase_api](https://github.com/kevinskyba/kickbase-api-python/), [telepot](https://github.com/nickoala/telepot)
-
+```
+pip3 install telepot
+pip3 install Kickbase-API
+```
 ## Usage
 
     usage: main.py [-h] [--ID ID] [--Ttoken TTOKEN] [--Tuser TUSER] user pw
