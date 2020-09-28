@@ -69,10 +69,16 @@ def main():
             logger.info("%s [%s]", league.name, league.id)
     else:
         user, leagues = login(kba)
-        answer = kba.league_collect_gift(args.ID)
-        if answer:
-            logger.info("Gift collected!")
-            sendTelepotMessage("League["+ args.ID +"]: Gift collected")
+        i = 0
+        while True:
+            answer = kba.league_collect_gift(args.ID)
+            if not answer:
+                break
+            i = i + 1
+        
+        if i >= 1:
+            logger.info(str(i) + " Gift collected!")
+            sendTelepotMessage("League["+ args.ID +"]: "+ str(i) + " Gift collected")
         else:
             logger.warning("No Gift collected!")
             sendTelepotMessage("League["+ args.ID +"]: No Gift collected!")
